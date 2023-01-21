@@ -8,4 +8,5 @@ Why should we use while loops:
 Syntax WhileLoop:
     while (condition) {
     code that we want to repeat
+    incrementation/decrementation
     }
