@@ -23,11 +23,10 @@ public class Task3 {
          */
 
         Scanner scan=new Scanner(System.in);
-
         System.out.println("Please enter mom’s first name");
-        String momName= scan.nextLine();
+        String momName= scan.nextLine().toUpperCase();
         System.out.println("Please enter dad’s first name");
-        String dadName= scan.nextLine();
+        String dadName= scan.nextLine().toUpperCase();
         System.out.println("Are you expecting boy or girl");
         String baby=scan.nextLine();
 
@@ -38,8 +37,5 @@ public class Task3 {
         } else {
             System.out.println("Invalid input");
         }
-
-
-
     }
 }
