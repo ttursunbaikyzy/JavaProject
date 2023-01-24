@@ -13,8 +13,10 @@ public class Task1 {
         String str="I love java";
         int middleChar=str.length()/2;
 
-        if(str.length()%2!=0 && str.length()>3){
-            System.out.println(str.charAt(middleChar));
+        if (!str.isEmpty()) {
+            if (str.length() % 2 != 0 && str.length() > 3) {
+                System.out.println(str.charAt(middleChar));
+            }
         }
 
 
