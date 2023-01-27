@@ -15,8 +15,8 @@ public class Task4InClassStringBuilderMethod {
         String str="This is the sentence i want to reverse";
         String [] arr = str.split(" ");
 
-        /* method 1:
-        for (String word:arr){
+        // method 1:
+        /*for (String word:arr){
             StringBuilder st = new StringBuilder(word);
             st.reverse();
             System.out.print(st);
