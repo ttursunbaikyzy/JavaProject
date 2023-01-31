@@ -30,7 +30,7 @@ Static variables:
 ========================================================================================================================
 Access modifiers:
     Access modifiers are some keywords in java that we can use to control the access of variables, methods and classes.
-    There are 4 access levels: private, protected, default, public.
+    There are 4 access levels: private, default, protected, public.
     And there are 3 keywords that we use to control this access for example:
     private, protected and public.
 

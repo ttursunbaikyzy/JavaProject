@@ -11,14 +11,23 @@ public class Task2 {
      */
 
     static String reverseStr (String input){
-        StringBuilder st = new StringBuilder(input);
+        /*StringBuilder st = new StringBuilder(input);
         st.reverse();
         String revSt = st.toString();
-        return revSt;
+        return revSt;*/
+
+        /*
+        static methods can be called by just writing the name f the class.method name
+         */
+
+        // below is a shorter way
+        return new StringBuilder(input).reverse().toString();
 
     }
 
     public static void main(String[] args) {
+
+        // if we are within the same class we don't need the class name as name
         System.out.println(reverseStr("Habibi"));
     }
 

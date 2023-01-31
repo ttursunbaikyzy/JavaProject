@@ -10,12 +10,12 @@ public class Task3 {
     access modifier = private
      */
 
-    private String vowels (String input){
-        return input.replaceAll("[^aeiouy]", "");
+    private static String vowels (String input){
+
+        return input.replaceAll("[^AEEIOYaeiouy]", "");
     }
 
     public static void main(String[] args) {
-        Task3 newStr = new Task3();
-        System.out.println(newStr.vowels("I love coding in Java"));
+        System.out.println(vowels("I love coding in Java"));
     }
 }
