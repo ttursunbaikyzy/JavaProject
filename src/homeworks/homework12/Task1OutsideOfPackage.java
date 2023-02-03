@@ -11,6 +11,6 @@ public class Task1OutsideOfPackage {
         Task1 task4=new Task1('G');
 
         // outside of a package only public or protected is allowed.
-        // for protected keyword to work we need to have a paranet child relationship
+        // for protected keyword to work we need to have a parent child relationship
     }
 }

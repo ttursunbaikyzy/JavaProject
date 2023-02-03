@@ -38,7 +38,7 @@ public class Employees {
     }
 
     public void printInfo () {
-            System.out.println(name + " is " + age + " years old and earns " + salary + ", and his SSN is " + ssn);
+            System.out.println(name + " is " + age + " years old and earns " + salary + ", and the SSN is " + ssn);
     }
 
     public static void main(String[] args) {
