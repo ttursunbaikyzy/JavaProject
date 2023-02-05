@@ -1,7 +1,7 @@
 package homeworks.homework13;
 
 public class A {
-    /*
+    /* Task 1:
     Write program to inherit class A
     that has method printF which is static
     and call or reuse that method into class B

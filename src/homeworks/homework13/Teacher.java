@@ -1,7 +1,7 @@
 package homeworks.homework13;
 
 public class Teacher {
-    /*
+    /* Task 2:
     Write a Java program called Teacher.
     Identify features and 4 behaviour of that Class.
     Create 3 subclasses MathTeacher, ChemistryTeacher and PianoTeacher
