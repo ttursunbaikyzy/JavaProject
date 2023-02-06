@@ -34,14 +34,14 @@ Private members (variable and methods) DO NOT PARTICIPATE in the Inheritance
 
 VARIABLES SYNTAX:
 
-    OPTIONAL         OPTIONAL           MUST     MUST
-access modfiers   nonAccess modifier   dataType  name;
+    OPTIONAL         OPTIONAL           MUST      MUST
+access modifiers   nonAccess modifier   dataType  name;
 
 i.e.   static int i
 
 METHODS SYNTAX:
-    OPTIONAL         OPTIONAL            MUST      MUST
-access modfiers   nonAccess modifier  return type  name () {}
+    OPTIONAL         OPTIONAL            MUST       MUST
+access modifiers   nonAccess modifier  return type  name () {}
 
 i.e.  static void hello (){}
 

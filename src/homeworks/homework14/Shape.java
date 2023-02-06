@@ -24,7 +24,7 @@ class Circle extends Shape {
     }
 
     double getArea(){
-        double area = Math.PI * radius * radius;
+        double area = Math.PI * super.radius * super.radius;
         return area;
     }
 

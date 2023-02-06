@@ -6,7 +6,7 @@ public class AreaOfCircle {
         Shape shape = new Shape(7.5);
         shape.printRadius();
 
-        Circle circle=new Circle(7.5);
+        Circle circle=new Circle(shape.radius);
         circle.printRadius();
         System.out.println("The area of the circle is "+circle.getArea());
 

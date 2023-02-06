@@ -1,5 +1,7 @@
 package homeworks.homework14;
 
+import java.util.Scanner;
+
 public class EmployeeTest {
     public static void main(String[] args) {
         Employee emp=new Employee("Sam","S123");
