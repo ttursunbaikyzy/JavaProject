@@ -22,6 +22,3 @@ this can be used with variables and methods
     this can be used to refer to the CURRENT instance methods as well
 
 this()  -can be used to call CURRENT class constructor
-
-
-
