@@ -9,39 +9,44 @@ public class CreditCard {
     double balance;
     double interest;
 
-    void calculateInterest (){
-        System.out.println((balance*interest)/100);
+    CreditCard(double balance, double interest){
+        this.balance=balance;
+        this.interest=interest;
+    }
+    public void calculateInterest (){
+        System.out.println("Interest "+(balance*interest)/100);
     }
 }
 
 class Visa extends CreditCard{
-
+    // the child class must have a constructor if the parent class does
+    public Visa(double balance, double interest) {
+        super(balance, interest);
+    }
 }
 
 class AX extends CreditCard{
     int time;
-    void calculateInterest (){
-        System.out.println((balance*interest*time)/100);
+    public AX(double balance, double interest, int time) {
+        super(balance, interest);
+        this.time = time;
     }
+
+    public void calculateInterest (){
+        System.out.println("Interest "+(balance*interest*time)/100);
+    }
+
 }
 
 class BankClient {
     public static void main(String[] args) {
-    CreditCard cc = new CreditCard();
-    cc.balance=5000;
-    cc.interest=10.5;
+    CreditCard cc = new CreditCard(100,10);
     cc.calculateInterest();
 
-    Visa v=new Visa();
-    v.balance=4500;
-    v.interest=5.75;
+    Visa v=new Visa(100,10);
     v.calculateInterest();
 
-    AX ax = new AX();
-    ax.balance=7500;
-    ax.interest=3.3;
-    ax.time=12;
+    AX ax = new AX(100,10,12);
     ax.calculateInterest();
-
 }
 }
