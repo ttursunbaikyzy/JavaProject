@@ -1,6 +1,9 @@
 Polymorphism:
     Polymorphism allows us to perform same action in different ways.
 
+    Greek: "many forms"
+    (the ability of an object to identify as more than one type)
+
 There are two types of Polymorphism:
     1) early binding or compile time
     2) runtime or late binding

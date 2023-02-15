@@ -13,4 +13,7 @@ class Child extends FinalKeyword{
     /* void tryChangningGravity(){
         // gravity=1.6;  // we get an error because we cannot assign a value to final variable
     }*/
+    public static void main(String[] args) {
+
+    }
 }
