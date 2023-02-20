@@ -4,7 +4,7 @@ public class WebDriverTester {
     public static void main(String[] args) {
 
         /*WebDriver webDriver=new Firefox(); // up casting
-        // Firefox firefox=new WebDriver(); // down casting >> cannot be executed this way
+        // Firefox firefox=new WebDriver(); // down casting >> cannot be executed this way, need to explicitly done
         webDriver.startBrowser();
         webDriver.openURL();
         webDriver.testLogin();

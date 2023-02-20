@@ -1,4 +1,4 @@
 Interface:
-    inteface is very smiliar to an abstract class. It is a contract between unrelated classes.
+    interface is very similar to an abstract class. It is a contract between unrelated classes.
     we can use it to achieve abstraction.
-    All methods arepublic and abstract as well.
+    All methods are public and abstract as well.

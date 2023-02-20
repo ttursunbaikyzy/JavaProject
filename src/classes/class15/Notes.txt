@@ -1,9 +1,9 @@
 Methods in Java:
-    Is just a Collection of Java statements and blocks of code like ef else loop printlns etc.
+    Is just a Collection of Java statements and blocks of code like if else loop printlns etc.
 
 Why should we learn about methods:
     1) It allows us to simplify large code as we can divide the logic into smaller parts by creating methods for them
-    build those methods one by one and later on combine them to build the comlete application.
+    build those methods one by one and later on combine them to build the complete application.
     2) Methods allow us to reuse code.
     3) Methods allow us to be flexible.
 
