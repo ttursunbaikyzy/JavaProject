@@ -27,4 +27,5 @@ class Dog implements Movable, Ownable {
     public void own() {
         System.out.println("You can own me");
     }
+
 }
