@@ -6,24 +6,24 @@ public class WebDriverTester {
         System.out.println(chrome.getTitle());
         chrome.navigate();
         chrome.open();
+        chrome.getScreenshot();
         chrome.close();
-        //chrome.getScreenshot();   not available
         System.out.println();
 
         FirefoxDriver firefox=new FirefoxDriver();
         System.out.println(firefox.getTitle());
         firefox.navigate();
         firefox.open();
+        firefox.getScreenshot();
         firefox.close();
-        // firefox.getScreenshot();   not available
         System.out.println();
 
         SafariDriver safari=new SafariDriver();
         System.out.println(safari.getTitle());
         safari.navigate();
         safari.open();
+        safari.getScreenshot();
         safari.close();
-        // safari.getScreenshot();   not available
 
     }
 }

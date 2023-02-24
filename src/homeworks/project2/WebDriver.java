@@ -13,7 +13,7 @@ interface TakeScreenshot extends RemoteWebDriver{
     void getScreenshot();
 }
 
-class ChromeDriver implements RemoteWebDriver, WebDriver {
+class ChromeDriver implements RemoteWebDriver, WebDriver, TakeScreenshot {
     public void navigate(){
         System.out.println("Download Chrome Driver");
     }
@@ -26,10 +26,13 @@ class ChromeDriver implements RemoteWebDriver, WebDriver {
     public String getTitle(){
         return "Chrome Driver";
     }
+    public void getScreenshot(){
+        System.out.println("Taking screenshot of Chrome Driver");
+    }
 
 }
 
-class FirefoxDriver implements RemoteWebDriver, WebDriver {
+class FirefoxDriver implements RemoteWebDriver, WebDriver, TakeScreenshot {
     public void navigate(){
         System.out.println("Download Firefox Driver");
     }
@@ -42,9 +45,12 @@ class FirefoxDriver implements RemoteWebDriver, WebDriver {
     public String getTitle(){
         return "Firefox Driver";
     }
+    public void getScreenshot(){
+        System.out.println("Taking screenshot of Firefox Driver");
+    }
 }
 
-class SafariDriver implements RemoteWebDriver, WebDriver {
+class SafariDriver implements RemoteWebDriver, WebDriver, TakeScreenshot {
     public void navigate(){
         System.out.println("Download Safari Driver");
     }
@@ -56,6 +62,9 @@ class SafariDriver implements RemoteWebDriver, WebDriver {
     }
     public String getTitle(){
         return "Safari Driver";
+    }
+    public void getScreenshot(){
+        System.out.println("Taking screenshot of Safari Driver");
     }
 }
 
