@@ -16,13 +16,17 @@ public class Task3 {
         words.add("goodbye");
         words.add("ciao");
 
-        Iterator<String>iterator=words.iterator();
+        /*Iterator<String>iterator=words.iterator();
         while(iterator.hasNext()){
             String s= iterator.next();
             if(s.endsWith("e")){
                 iterator.remove();
             }
         }
+        System.out.println(words);
+        -same as below: */
+
+        words.removeIf(x -> x.endsWith("e"));
         System.out.println(words);
 
     }

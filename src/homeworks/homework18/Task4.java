@@ -16,7 +16,8 @@ public class Task4 {
         drinks.add("beer");
 
         for (int i = 0; i < drinks.size(); i++) {
-            if(drinks.get(i).contains("a") || drinks.get(i).contains("e")){
+            String drink=drinks.get(i);
+            if(drink.contains("a") || drink.contains("e")){
                 drinks.set(i,"water");
             }
         }
