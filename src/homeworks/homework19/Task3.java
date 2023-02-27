@@ -1,6 +1,7 @@
 package homeworks.homework19;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class Task3 {
 
@@ -11,7 +12,9 @@ public class Task3 {
         Each student object should have name and studentID.
         Display name of each student.
          */
-        HashSet<Student> students=new HashSet<>();
+
+        //HashSet<Student> student=new HashSet<>();
+        Set<Student> students=new HashSet<>(); // we can achieve polymorphism using type Set
         students.add(new Student("Sam","S123456789"));
         students.add(new Student("Tami","T123456789"));
         students.add(new Student("Abeera","A123456789"));
@@ -19,23 +22,27 @@ public class Task3 {
         students.add(new Student("Wilasinee","W123456789"));
 
         for(Student s:students){
-            System.out.println(s.display());
+            System.out.println(s.getName());
         }
 
     }
 }
 
 class Student{
-    String name;
-    String id;
+    private String name;
+    private String id;
 
     public Student(String name, String id) {
         this.name = name;
         this.id = id;
     }
 
-    String display(){
-        return "Student: "+name+" and student ID is "+id;
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
     }
 
 }

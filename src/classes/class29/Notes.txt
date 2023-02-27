@@ -1,8 +1,6 @@
 Iterator:
 Sets:
-    They don't allow duplicate values.
-
-    There are three main types of sets:
+    They don't allow duplicate values. There are three main types of sets:
 
     HashSet:
         Upside: Fast

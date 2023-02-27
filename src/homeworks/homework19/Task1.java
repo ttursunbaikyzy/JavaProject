@@ -10,23 +10,23 @@ public class Task1 {
         In this set we want all objects to be sorted in alphabetical order.
         Using 2 different ways retrieve all elements from set.
          */
-        TreeSet<String> cities=new TreeSet<>();
-        cities.add("Houston");
-        cities.add("Vienna");
-        cities.add("Chicago");
-        cities.add("San Francisco");
-        cities.add("Austin");
-        cities.add("Dallas");
+        TreeSet<String> countries=new TreeSet<>();
+        countries.add("USA");
+        countries.add("Mexico");
+        countries.add("Canada");
+        countries.add("Italy");
+        countries.add("Egypt");
+        countries.add("Indonesia");
 
-        System.out.println(cities);
+        System.out.println(countries);
         System.out.println("***************************");
 
-        for(String c:cities){
+        for(String c:countries){
             System.out.println(c);
         }
         System.out.println("***************************");
 
-        Iterator<String> it=cities.iterator();
+        Iterator<String> it=countries.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
         }
