@@ -1,0 +1,56 @@
+FileHandling:
+    Reading and writing data to files is called fileHandling.
+
+    1) To read or write the data first we need to know the path or location
+    where we will be reading or writing that file.
+
+    2) We need to navigate to that location or bring the file into the memory so
+    that javaprogram can process the data from that file.
+    We use two classes to navigate: one is called FileInputStream and the other one
+    is called FileOutputStream. When we have to read the data we use FileInputStream
+    and when we have to write the data we use the FileOutputStream.
+
+    3) We need to know about a class that knows how to read and write the data
+    from that specific file for examples we use Properties class when we have to
+    the data from the .properties file.
+    We use XSSFWorkbook to read and write the data from the Excel file.
+
+Why should we learn about FileHandling?
+    1) we will be storing data like username, passwords, URLs, type of browsers, etc.
+    in configuration files.
+    2) when we need to perform data driven testing we will be storing and reading all
+    the data from files like xlsx or csv files.
+
+How to read/write data from files:
+    1) Get the path
+    2) use FileInputStream/FileOutputStream to navigate.
+    3) use a specialized class like Properties or XSSFWorkbook.
+
+================================================================================================
+what are Exception?
+    Exceptions are runtime issues that can stop normal flow of our programs and can abruptly
+    terminate the programs, which is very bad and leads to bad user experience.
+
+Exception Handling:
+    We stop the program from terminating abruptly, and we try to mitigate the issue we provide
+    a backup code. and convert the error message to simple text.
+
+**********************From Savo*******************************
+Two main types of runtime errors:
+   Exception
+   Error
+
+With the exception ending we will avoid this type of issues (The whole app crashing due to one
+function not running properly).
+
+If you think you are writing code that will have problems later on running properly, you can use 
+   try {
+problematic line of code goes here
+} catch (Exception e) {
+   sout (e);
+}
+
+The issue will still occur, but the rest of the code will continue working.
+Exceptions are issues that occur in the runtime, and they stop the app of working normally. The
+mechanism to stop this is to use try blocks.
+**************************************************************
