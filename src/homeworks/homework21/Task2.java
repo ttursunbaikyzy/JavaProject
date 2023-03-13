@@ -13,27 +13,27 @@ public class Task2 {
         try {
             System.out.println(10/0);
         } catch (ArithmeticException ae) {
-            System.out.println("Arithmetic Exception: Cannot divide by 0");
+            System.out.println(ae+" : cannot divide by 0");
             listOfExceptions.add(ae);
         }
         try {
             String str = null;
             str.length();
         } catch (NullPointerException npe) {
-            System.out.println("Null Pointer Exception: cannot access a method on a null object");
+            System.out.println(npe+" : cannot access a method on a null object");
             listOfExceptions.add(npe);
         }
         try {
             String str="Java";
             str.charAt(10);
         } catch (StringIndexOutOfBoundsException se) {
-            System.out.println("String Index Out Of Bounds Exception: trying to access a character that doesn't exist in the given String");
+            System.out.println(se+" : trying to access a character that doesn't exist in the given String");
             listOfExceptions.add(se);
         }
         try {
             FileInputStream fileInputStream=new FileInputStream("");
         } catch (FileNotFoundException fe){
-            System.out.println("File Not Found Exception: file cannot be found due to incorrect/missing path");
+            System.out.println(fe+" : file cannot be found due to incorrect/missing path");
             listOfExceptions.add(fe);
         }
         return listOfExceptions;
